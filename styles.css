@@ -278,34 +278,3 @@ a[href*="maps.app.goo.gl"] {
   display: inline-flex;
   align-items: center;
 }
-
-/* ═══════════════════════════════════════════════════════════════
-   21. DEVOTIONAL REFLECTION — no user information required
-   Rendered before the closing blessing so the invitation gains a
-   self-contained devotional message without adding form fields.
-═══════════════════════════════════════════════════════════════ */
-section[data-purpose="blessing-closing"]::before {
-  content: "🙏 गणपती बाप्पा मोरया 🙏\\A\\A बुद्धी, समृद्धी आणि आनंदाने\\A आपले जीवन सदैव भरून जावो.\\A बाप्पाची कृपा आपल्या कुटुंबावर\\A सदैव राहो.";
-  white-space: pre-line;
-  display: block;
-  max-width: 42rem;
-  margin: 0 auto 2.5rem;
-  padding: 1.5rem 1.25rem;
-  border: 1px solid rgba(236, 195, 113, 0.28);
-  border-radius: 1.5rem;
-  background: rgba(7, 26, 32, 0.78);
-  box-shadow: 0 0 30px rgba(236, 195, 113, 0.08);
-  color: #fdf0cd;
-  font-family: "Tiro Devanagari Marathi", "Rozha One", serif;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  line-height: 1.9;
-}
-
-@media (max-width: 640px) {
-  section[data-purpose="blessing-closing"]::before {
-    margin-bottom: 2rem;
-    padding: 1.25rem 1rem;
-    font-size: 1rem;
-    line-height: 1.8;
-  }
-}
