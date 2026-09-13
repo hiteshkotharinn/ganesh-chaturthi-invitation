@@ -1,0 +1,311 @@
+/* ═══════════════════════════════════════════════════════════════
+   styles.css  —  Ganpati Invitation Mobile Optimisations
+   Supplements Tailwind. Mobile-first. No structural changes.
+═══════════════════════════════════════════════════════════════ */
+
+/* ── 1. Global safety guards ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Prevent ANY horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+/* ── 2. Curtain / Door overlay ── */
+#curtain-container {
+  /* Ensure curtain covers full viewport including safe-areas */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  touch-action: manipulation;
+}
+
+#central-seal {
+  /* Larger touch target on mobile */
+  min-width: 144px;
+  min-height: 144px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* ── 3. Fixed header — sits above content ── */
+header {
+  /* Prevent header from overlapping first section content */
+  padding-top: max(1.25rem, env(safe-area-inset-top));
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+}
+
+/* Music button — proper touch target */
+#audio-toggle-btn {
+  min-width: 44px;
+  min-height: 44px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  flex-shrink: 0;
+}
+
+/* ── 4. Corner filigree — clip on small screens ── */
+/* The fixed corner SVGs can slightly overflow on 360px.
+   Clip them to stay within the safe area. */
+.fixed.inset-0.pointer-events-none.z-10>svg {
+  max-width: 22vw;
+  max-height: 22vw;
+}
+
+/* ── 5. Hero section — top padding so content clears header ── */
+main>section:first-child {
+  padding-top: 0 !important;
+  /* clear the fixed header */
+}
+
+/* ── 6. Shloka heading — smaller font so ॥ stays on same line ── */
+h1.font-marathiHeading span {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  display: block;
+  padding-left: 4px;
+  padding-right: 4px;
+  /* Override Tailwind text-2xl (1.5rem) → fits shloka in 2 lines on 360–430px */
+  font-size: clamp(0.92rem, 3.8vw, 1.5rem) !important;
+  line-height: 1.6 !important;
+}
+
+/* ── 7. Arch container — constrain to viewport width ── */
+/* The arch + diyas must not cause horizontal scroll */
+.relative.w-72 {
+  /* On ≤375px fall back to slightly narrower */
+  max-width: calc(100vw - 60px);
+  /* 60px = 2 × (diya width ~24px + gap) */
+}
+
+/* ── 8. Hanging diyas — prevent overflow on very small screens ── */
+@media (max-width: 360px) {
+
+  /* Tuck diyas a bit closer on 360px */
+  .absolute.-left-6 {
+    left: -14px;
+  }
+
+  .absolute.-right-6 {
+    right: -14px;
+  }
+}
+
+/* ── 9. Ganpati image — fluid within arch ── */
+.relative.z-10.w-64 {
+  width: min(256px, calc(100vw - 80px));
+}
+
+.relative.z-10.w-72 {
+  width: min(288px, calc(100vw - 80px));
+}
+
+/* ── 10. Invitation paragraph — comfy reading on mobile ── */
+@media (max-width: 640px) {
+  p.text-base.md\:text-xl.text-stone-100 {
+    font-size: 1rem;
+    line-height: 1.9;
+    text-align: justify;
+  }
+}
+
+/* ── 11. Event cards — stack on small screens (already col-1 via Tailwind) ── */
+@media (max-width: 480px) {
+
+  /* Event card date text */
+  .text-2xl.md\:text-4xl.font-bold.text-white.font-marathi {
+    font-size: 1.3rem;
+  }
+
+  .text-lg.md\:text-xl.font-semibold {
+    font-size: 1rem;
+  }
+}
+
+/* ── 12. Location section — map iframe mobile height ── */
+@media (max-width: 1024px) {
+
+  /* stack: map on top, address below */
+  iframe[title="Kothari Kirana Nandura"] {
+    height: 240px;
+    min-height: 240px;
+  }
+}
+
+/* The "Open in Maps" pill on the map — better touch target */
+a[href*="maps.google.com/maps?q"],
+a[href*="google.com/maps/search"] {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ── 13. Location address — prevent overflow ── */
+.text-stone-300.text-base.font-marathi {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* ── 14. Closing / blessing section — comfortable padding ── */
+@media (max-width: 640px) {
+  section[data-purpose="blessing-closing"] h2 {
+    font-size: 1.4rem;
+    line-height: 1.65;
+  }
+
+  section[data-purpose="blessing-closing"] {
+    padding-bottom: max(3rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* ── 15. Smooth momentum scroll on iOS ── */
+html {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ── 16. Prefers reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── 17. Scrollbar (non-mobile cosmetic) ── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #051318;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a4c52;
+  border-radius: 3px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   18. GANPATI IMAGE — Remove black JPG background
+   mix-blend-mode: screen makes pure black (0,0,0) transparent,
+   leaving the idol colours intact against the dark site bg.
+═══════════════════════════════════════════════════════════════ */
+img[alt="Shri Ganesh"] {
+  mix-blend-mode: screen;
+  /* Slight brightness boost so colours pop after blending */
+  filter:
+    drop-shadow(0 12px 28px rgba(0, 0, 0, 0.85)) brightness(1.08) contrast(1.05);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   19. SCROLL REVEAL — fade-up animation per section
+   JS adds .sr-hidden on page load, then .sr-visible when
+   the section enters the viewport.
+═══════════════════════════════════════════════════════════════ */
+
+/* Initial hidden state */
+.sr-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+/* Visible state — triggered by JS */
+.sr-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Stagger: each child section slightly delayed */
+main>section:nth-child(1).sr-hidden {
+  transition-delay: 0ms;
+}
+
+main>section:nth-child(2).sr-hidden {
+  transition-delay: 80ms;
+}
+
+main>section:nth-child(3).sr-hidden {
+  transition-delay: 120ms;
+}
+
+main>section:nth-child(4).sr-hidden {
+  transition-delay: 160ms;
+}
+
+main>section:nth-child(5).sr-hidden {
+  transition-delay: 200ms;
+}
+
+/* Respect reduced motion — skip the animation entirely */
+@media (prefers-reduced-motion: reduce) {
+  .sr-hidden {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ── 20. Updated Maps touch-target selector (short URL) ── */
+a[href*="maps.app.goo.gl"] {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   21. DEVOTIONAL REFLECTION — no user information required
+   Rendered before the closing blessing so the invitation gains a
+   self-contained devotional message without adding form fields.
+═══════════════════════════════════════════════════════════════ */
+section[data-purpose="blessing-closing"]::before {
+  content: "🙏 गणपती बाप्पा मोरया 🙏\\A\\A बुद्धी, समृद्धी आणि आनंदाने\\A आपले जीवन सदैव भरून जावो.\\A बाप्पाची कृपा आपल्या कुटुंबावर\\A सदैव राहो.";
+  white-space: pre-line;
+  display: block;
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem 1.25rem;
+  border: 1px solid rgba(236, 195, 113, 0.28);
+  border-radius: 1.5rem;
+  background: rgba(7, 26, 32, 0.78);
+  box-shadow: 0 0 30px rgba(236, 195, 113, 0.08);
+  color: #fdf0cd;
+  font-family: "Tiro Devanagari Marathi", "Rozha One", serif;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.9;
+}
+
+@media (max-width: 640px) {
+  section[data-purpose="blessing-closing"]::before {
+    margin-bottom: 2rem;
+    padding: 1.25rem 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}

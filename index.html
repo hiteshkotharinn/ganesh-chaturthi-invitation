@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    name="viewport" />
+  <title>गणेश उत्सव आमंत्रण - कोठारी परिवार</title>
+  <!-- External Tailwind CSS v3 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+  </script>
+  <!-- Google Fonts for Marathi & Sanskrit Typography -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Gotu&family=Marcellus&family=Rozha+One&family=Yatra+One&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap"
+    rel="stylesheet" />
+  <script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'royal-dark': '#041014',
+            'gold-primary': '#ECC371',
+            'gold-dark': '#C59A3F',
+            'gold-light': '#FDF0CD',
+            'card-dark': 'rgba(6, 20, 24, 0.85)',
+          },
+          fontFamily: {
+            marathi: ['"Tiro Devanagari Marathi"', '"Rozha One"', 'serif'],
+            marathiHeading: ['"Rozha One"', '"Tiro Devanagari Marathi"',
+              'serif'
+            ],
+            cinzel: ['"Cinzel Decorative"', 'serif'],
+            marcellus: ['"Marcellus"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style data-purpose="damask-background">
+    body {
+      background-color: #051318;
+      background-image:
+        radial-gradient(circle at 50% 30%, rgba(13, 44, 48, 0.45) 0%, rgba(4, 16, 20, 0.95) 75%),
+        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2314333b' fill-opacity='0.16' fill-rule='evenodd'%3E%3Cpath d='M40 0c6.075 10 13.925 10 20 0 5 10 15 15 20 20-10 6.075-10 13.925 0 20-5 5-15 10-20 20-6.075-10-13.925-10-20 0-5-10-15-15-20-20 10-6.075 10-13.925 0-20 5-5 15-10 20-20zm0 18c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 28c-11.046 0-20-8.954-20-20S28.954 6 40 6s20 8.954 20 20-8.954 20-20 20z'/%3E%3C/g%3E%3C/svg%3E");
+      color: #FDF0CD;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <style data-purpose="gold-gradient-effects">
+    .text-gold-gradient {
+      background: linear-gradient(180deg, #FFF0CA 0%, #ECC574 45%, #C29337 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 8px rgba(236, 195, 113, 0.25));
+    }
+
+    .gold-badge {
+      background: radial-gradient(circle at 35% 30%, #FFEBA6 0%, #D4A346 50%, #8A641A 100%);
+      box-shadow:
+        0 0 35px rgba(243, 194, 91, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.6),
+        inset 0 -3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .gold-border-glow {
+      border: 1px solid rgba(212, 163, 70, 0.35);
+      box-shadow: 0 0 20px rgba(212, 163, 70, 0.08);
+    }
+  </style>
+  <style data-purpose="gate-animation">
+    #door-left,
+    #door-right {
+      transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1), opacity 1.2s ease;
+    }
+
+    .doors-open #door-left {
+      transform: translateX(-101%);
+      pointer-events: none;
+    }
+
+    .doors-open #door-right {
+      transform: translateX(101%);
+      pointer-events: none;
+    }
+
+    .doors-open #central-seal {
+      opacity: 0;
+      transform: scale(0.6) rotate(10deg);
+      pointer-events: none;
+      transition: all 0.7s ease-in;
+    }
+
+    .doors-open #curtain-container {
+      pointer-events: none;
+    }
+  </style>
+  <!-- Mobile-first overrides -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body
+  class="min-h-screen relative font-marathi selection:bg-amber-900 selection:text-amber-100">
+
+  <div class="fixed inset-0 pointer-events-none z-10 overflow-hidden">
+    <svg
+      class="absolute top-3 left-3 w-24 h-24 md:w-36 md:h-36 text-[#ECC371] opacity-75 drop-shadow-[0_0_8px_rgba(236,195,113,0.4)]"
+      fill="none" stroke="currentColor" viewBox="0 0 100 100">
+      <path d="M2 2 L90 2 M2 2 L2 90" stroke-width="1.5"></path>
+      <path d="M6 6 L75 6 M6 6 L6 75" stroke-dasharray="2 2"
+        stroke-width="0.75"></path>
+      <path d="M2 2 C12 25, 25 12, 38 38 C32 20, 20 32, 2 2 Z"
+        fill="currentColor" opacity="0.6"></path>
+      <path d="M14 14 C25 8, 38 14, 45 22 C35 28, 22 24, 14 14 Z"
+        fill="currentColor" opacity="0.7"></path>
+      <path d="M14 14 C8 25, 14 38, 22 45 C28 35, 24 22, 14 14 Z"
+        fill="currentColor" opacity="0.7"></path>
+      <circle cx="2" cy="2" fill="currentColor" r="2"></circle>
+      <circle cx="90" cy="2" fill="currentColor" r="2"></circle>
+      <circle cx="2" cy="90" fill="currentColor" r="2"></circle>
+    </svg>
+    <svg
+      class="absolute top-3 right-3 w-24 h-24 md:w-36 md:h-36 text-[#ECC371] opacity-75 drop-shadow-[0_0_8px_rgba(236,195,113,0.4)] rotate-90"
+      fill="none" stroke="currentColor" viewBox="0 0 100 100">
+      <path d="M2 2 L90 2 M2 2 L2 90" stroke-width="1.5"></path>
+      <path d="M6 6 L75 6 M6 6 L6 75" stroke-dasharray="2 2"
+        stroke-width="0.75"></path>
+      <path d="M2 2 C12 25, 25 12, 38 38 C32 20, 20 32, 2 2 Z"
+        fill="currentColor" opacity="0.6"></path>
+      <path d="M14 14 C25 8, 38 14, 45 22 C35 28, 22 24, 14 14 Z"
+        fill="currentColor" opacity="0.7"></path>
+      <path d="M14 14 C8 25, 14 38, 22 45 C28 35, 24 22, 14 14 Z"
+        fill="currentColor" opacity="0.7"></path>
+      <circle cx="2" cy="2" fill="currentColor" r="2"></circle>
+      <circle cx="90" cy="2" fill="currentColor" r="2"></circle>
+      <circle cx="2" cy="90" fill="currentColor" r="2"></circle>
+    </svg>
+    <svg
+      class="absolute bottom-3 left-3 w-24 h-24 md:w-36 md:h-36 text-[#ECC371] opacity-75 drop-shadow-[0_0_8px_rgba(236,195,113,0.4)] -rotate-90"
+      fill="none" stroke="currentColor" viewBox="0 0 100 100">
+      <path d="M2 2 L90 2 M2 2 L2 90" stroke-width="1.5"></path>
+      <path d="M6 6 L75 6 M6 6 L6 75" stroke-dasharray="2 2"
+        stroke-width="0.75"></path>
+      <path d="M2 2 C12 25, 25 12, 38 38 C32 20, 20 32, 2 2 Z"
+        fill="currentColor" opacity="0.6"></path>
+      <path d="M14 14 C25 8, 38 14, 45 22 C35 28, 22 24, 14 14 Z"
+        fill="currentColor" opacity="0.7"></path>
+      <path d="M14 14 C8 25, 14 38, 22 45 C28 35, 24 22, 14 14 Z"
+        fill="currentColor" opacity="0.7"></path>
+      <circle cx="2" cy="2" fill="currentColor" r="2"></circle>
+      <circle cx="90" cy="2" fill="currentColor" r="2"></circle>
+      <circle cx="2" cy="90" fill="currentColor" r="2"></circle>
+    </svg>
+    <svg
+      class="absolute bottom-3 right-3 w-24 h-24 md:w-36 md:h-36 text-[#ECC371] opacity-75 drop-shadow-[0_0_8px_rgba(236,195,113,0.4)] rotate-180"
+      fill="none" stroke="currentColor" viewBox="0 0 100 100">
+      <path d="M2 2 L90 2 M2 2 L2 90" stroke-width="1.5"></path>
+      <path d="M6 6 L75 6 M6 6 L6 75" stroke-dasharray="2 2"
+        stroke-width="0.75"></path>
+      <path d="M2 2 C12 25, 25 12, 38 38 C32 20, 20 32, 2 2 Z"
+        fill="currentColor" opacity="0.6"></path>
+      <path d="M14 14 C25 8, 38 14, 45 22 C35 28, 22 24, 14 14 Z"
+        fill="currentColor" opacity="0.7"></path>
+      <path d="M14 14 C8 25, 14 38, 22 45 C28 35, 24 22, 14 14 Z"
+        fill="currentColor" opacity="0.7"></path>
+      <circle cx="2" cy="2" fill="currentColor" r="2"></circle>
+      <circle cx="90" cy="2" fill="currentColor" r="2"></circle>
+      <circle cx="2" cy="90" fill="currentColor" r="2"></circle>
+    </svg>
+  </div>
+
+  <!-- BEGIN: InteractiveDoorOverlay -->
+  <!-- NOTE: class does NOT include "doors-open" on load — curtain is shown initially -->
+  <div
+    class="fixed inset-0 z-50 flex items-center justify-center pointer-events-auto"
+    data-purpose="door-reveal-overlay" id="curtain-container">
+    <!-- Left Door Leaf -->
+    <div
+      class="w-1/2 h-full bg-[#051318] border-r border-[#3a4c52]/40 relative overflow-hidden flex shadow-2xl"
+      id="door-left">
+      <div
+        class="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_70%_50%,rgba(19,48,56,0.6)_0%,transparent_80%)]">
+      </div>
+      <div class="w-full h-full flex justify-end">
+        <div class="w-24 h-full border-r border-[#243d45]/40 bg-black/10"></div>
+        <div class="w-16 h-full border-r border-[#30505b]/40 bg-black/15"></div>
+      </div>
+    </div>
+    <!-- Right Door Leaf -->
+    <div
+      class="w-1/2 h-full bg-[#051318] border-l border-[#3a4c52]/40 relative overflow-hidden flex shadow-2xl"
+      id="door-right">
+      <div
+        class="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_30%_50%,rgba(19,48,56,0.6)_0%,transparent_80%)]">
+      </div>
+      <div class="w-full h-full flex justify-start">
+        <div class="w-16 h-full border-r border-[#30505b]/40 bg-black/15"></div>
+        <div class="w-24 h-full border-r border-[#243d45]/40 bg-black/10"></div>
+      </div>
+    </div>
+    <!-- Central Interactive Medallion / Wax Seal -->
+    <div
+      class="absolute z-50 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 hover:scale-105"
+      id="central-seal" onclick="openDoors()">
+      <div
+        class="w-36 h-36 md:w-44 md:h-44 rounded-full gold-badge flex flex-col items-center justify-center p-3 border-2 border-[#fff3b0]/40 text-center relative shadow-[0_0_50px_rgba(236,195,113,0.5)]">
+        <div
+          class="w-[90%] h-[90%] rounded-full border border-[#835a12]/50 flex flex-col items-center justify-center bg-gradient-to-b from-transparent via-[#dca346]/20 to-[#6d460a]/40">
+          <span class="text-sm text-stone-900 font-bold tracking-widest mb-1">॥
+            श्री गणेश ॥</span>
+          <div class="w-12 h-[1px] bg-stone-900/40 my-0.5"></div>
+          <span
+            class="text-[10px] md:text-xs tracking-[0.25em] text-stone-900 font-semibold uppercase"></span>
+        </div>
+      </div>
+      <div
+        class="mt-4 text-[#ecc371]/80 text-xs tracking-widest font-sans uppercase animate-pulse">
+        आमंत्रण स्वीकारण्यासाठी स्पर्श करा
+      </div>
+    </div>
+  </div>
+  <!-- END: InteractiveDoorOverlay -->
+
+  <!-- BEGIN: TopBarNavigation -->
+  <header
+    class="w-full max-w-7xl mx-auto px-6 py-2 flex items-center justify-between relative z-20">
+    <div
+      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center space-x-2 text-[#ECC371] pointer-events-none">
+      <span
+        class="text-xs md:text-sm tracking-wider font-semibold text-center">॥
+        श्री गणेशाय नमः ॥</span>
+    </div>
+    <button
+      class="ml-auto w-10 h-10 rounded-full bg-[#081b21] border border-[#d4a346]/40 flex items-center justify-center text-[#ECC371] hover:bg-[#0d2a33] transition-colors shadow-lg shadow-black/60 z-10"
+      id="audio-toggle-btn" onclick="toggleAudio()"
+      title="संगीत चालू / बंद करा">
+      <svg class="w-4 h-4 fill-current" id="music-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+        </path>
+      </svg>
+    </button>
+  </header>
+  <!-- END: TopBarNavigation -->
+
+  <main
+    class="w-full relative z-10 space-y-4 md:space-y-16 lg:space-y-28 pb-24">
+
+    <!-- BEGIN: HeroSection -->
+    <section
+      class="flex flex-col items-center justify-center text-center px-4 pt-0 relative">
+      <!-- Majestic Hero Heading -->
+      <h1
+        class="font-marathiHeading tracking-wide mb-2 px-4 text-center flex flex-col items-center justify-center">
+        <span
+          class="text-2xl sm:text-4xl md:text-5xl font-bold leading-snug text-transparent bg-clip-text bg-gradient-to-r from-[#ECC371] via-[#FFF3B0] to-[#C59A3F] drop-shadow-[0_4px_20px_rgba(236,195,113,0.35)]">॥
+          वक्रतुंड महाकाय सूर्यकोटि समप्रभ ॥</span>
+        <span
+          class="text-2xl sm:text-4xl md:text-5xl font-bold leading-snug text-transparent bg-clip-text bg-gradient-to-r from-[#ECC371] via-[#FFF3B0] to-[#C59A3F] drop-shadow-[0_4px_20px_rgba(236,195,113,0.35)] mt-3">॥
+          निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥</span>
+      </h1>
+
+      <!-- Temple Jharokha Arch with Deity -->
+      <div
+        class="relative w-72 sm:w-80 md:w-96 flex flex-col items-center justify-center mt-10">
+        <!-- Hanging Brass Diyas (Deepas) Flanking the Arch -->
+        <div
+          class="absolute -left-6 md:-left-10 top-12 z-20 flex flex-col items-center pointer-events-none drop-shadow-[0_4px_12px_rgba(236,195,113,0.4)]">
+          <div
+            class="w-[1px] h-20 bg-gradient-to-b from-[#ECC371]/20 via-[#ECC371] to-[#D4A346]">
+          </div>
+          <div
+            class="w-2.5 h-2.5 rounded-full border border-[#ECC371] bg-[#051318] -my-0.5 flex items-center justify-center">
+            <div class="w-1 h-1 rounded-full bg-[#ECC371]"></div>
+          </div>
+          <div
+            class="w-[1px] h-10 bg-gradient-to-b from-[#ECC371] to-[#C59A3F]">
+          </div>
+          <svg class="w-7 h-9 text-[#ECC371] fill-current" viewBox="0 0 28 36">
+            <path class="animate-pulse"
+              d="M14 0 C14 4 11 8 11 12 L17 12 C17 8 14 4 14 0 Z" fill="#FDE047"
+              opacity="0.9"></path>
+            <circle cx="14" cy="8" fill="#F59E0B" filter="blur(3px)"
+              opacity="0.35" r="7"></circle>
+            <path
+              d="M5 13 C5 13 4 22 14 22 C24 22 23 13 23 13 L20 13 C20 18 17 19.5 14 19.5 C11 19.5 8 18 8 13 Z"
+              fill="url(#goldD1)"></path>
+            <ellipse cx="14" cy="13" fill="#F6D779" rx="9" ry="2.5"></ellipse>
+            <path
+              d="M12 21 L12 26 C12 28 10 30 7 31 L21 31 C18 30 16 28 16 26 L16 21 Z"
+              fill="#C59A3F"></path>
+            <path d="M14 31 L14 35 M11 35 L17 35" stroke="#ECC371"
+              stroke-width="1.5"></path>
+            <defs>
+              <linearGradient id="goldD1" x1="0%" x2="100%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#FFF0CA"></stop>
+                <stop offset="50%" stop-color="#ECC574"></stop>
+                <stop offset="100%" stop-color="#8A641A"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div
+            class="w-8 h-8 rounded-full bg-amber-400/20 blur-md -mt-7 pointer-events-none animate-pulse">
+          </div>
+        </div>
+        <div
+          class="absolute -right-6 md:-right-10 top-12 z-20 flex flex-col items-center pointer-events-none drop-shadow-[0_4px_12px_rgba(236,195,113,0.4)]">
+          <div
+            class="w-[1px] h-20 bg-gradient-to-b from-[#ECC371]/20 via-[#ECC371] to-[#D4A346]">
+          </div>
+          <div
+            class="w-2.5 h-2.5 rounded-full border border-[#ECC371] bg-[#051318] -my-0.5 flex items-center justify-center">
+            <div class="w-1 h-1 rounded-full bg-[#ECC371]"></div>
+          </div>
+          <div
+            class="w-[1px] h-10 bg-gradient-to-b from-[#ECC371] to-[#C59A3F]">
+          </div>
+          <svg class="w-7 h-9 text-[#ECC371] fill-current" viewBox="0 0 28 36">
+            <path class="animate-pulse"
+              d="M14 0 C14 4 11 8 11 12 L17 12 C17 8 14 4 14 0 Z" fill="#FDE047"
+              opacity="0.9"></path>
+            <circle cx="14" cy="8" fill="#F59E0B" filter="blur(3px)"
+              opacity="0.35" r="7"></circle>
+            <path
+              d="M5 13 C5 13 4 22 14 22 C24 22 23 13 23 13 L20 13 C20 18 17 19.5 14 19.5 C11 19.5 8 18 8 13 Z"
+              fill="url(#goldD2)"></path>
+            <ellipse cx="14" cy="13" fill="#F6D779" rx="9" ry="2.5"></ellipse>
+            <path
+              d="M12 21 L12 26 C12 28 10 30 7 31 L21 31 C18 30 16 28 16 26 L16 21 Z"
+              fill="#C59A3F"></path>
+            <path d="M14 31 L14 35 M11 35 L17 35" stroke="#ECC371"
+              stroke-width="1.5"></path>
+            <defs>
+              <linearGradient id="goldD2" x1="0%" x2="100%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#FFF0CA"></stop>
+                <stop offset="50%" stop-color="#ECC574"></stop>
+                <stop offset="100%" stop-color="#8A641A"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div
+            class="w-8 h-8 rounded-full bg-amber-400/20 blur-md -mt-7 pointer-events-none animate-pulse">
+          </div>
+        </div>
+
+        <!-- Arched Frame Container -->
+        <div class="w-full relative p-2">
+          <!-- Double Arch Golden Line & Ornate Filigree Border -->
+          <div
+            class="absolute inset-0 border-2 border-[#ECC371]/75 rounded-t-[10rem] border-b-0 pointer-events-none shadow-[0_0_25px_rgba(236,195,113,0.3)]">
+          </div>
+          <div
+            class="absolute inset-1.5 border border-[#C59A3F]/60 rounded-t-[9.7rem] border-b-0 pointer-events-none">
+          </div>
+          <div
+            class="absolute inset-3 border border-[#ECC371]/20 rounded-t-[9.3rem] border-b-0 pointer-events-none border-dashed">
+          </div>
+          <!-- Arch Top Decorative Auspicious Crest -->
+          <div
+            class="absolute -top-5 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
+            <div
+              class="bg-[#051318] px-3 py-0.5 rounded-full border border-[#ECC371]/50 shadow-[0_0_12px_rgba(236,195,113,0.4)] flex items-center space-x-1.5">
+              <span class="text-[#ECC371] text-xs">✦</span>
+              <span
+                class="text-[#F6D779] font-bold text-sm font-serif tracking-wider">ॐ</span>
+              <span class="text-[#ECC371] text-xs">✦</span>
+            </div>
+          </div>
+          <!-- Arch Left & Right Shoulder Rosettes -->
+          <div
+            class="absolute top-28 -left-1.5 text-[#ECC371] text-xs pointer-events-none drop-shadow-[0_0_6px_rgba(236,195,113,0.6)]">
+            ✤</div>
+          <div
+            class="absolute top-28 -right-1.5 text-[#ECC371] text-xs pointer-events-none drop-shadow-[0_0_6px_rgba(236,195,113,0.6)]">
+            ✤</div>
+          <!-- Deity Portrait Wrapper -->
+          <div
+            class="relative rounded-t-[9.5rem] bg-gradient-to-b from-[#0a2329]/80 via-transparent to-[#041014] pt-6 flex flex-col items-center overflow-hidden">
+            <!-- Sacred Radiant Warm Halo -->
+            <div
+              class="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_45%,rgba(245,197,90,0.22)_0%,rgba(19,48,56,0.3)_50%,transparent_75%)] pointer-events-none">
+            </div>
+            <!-- Background Sacred Mandala Geometry -->
+            <div
+              class="absolute pointer-events-none flex items-center justify-center"
+              style="top:48%;left:50%;width:330px;height:330px;transform:translate(-50%,-50%);z-index:1;">
+              <div
+                class="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(245,212,117,0.38)_0%,rgba(236,195,113,0.18)_45%,transparent_75%)] blur-md">
+              </div>
+              <svg
+                class="absolute w-80 h-80 text-[#ECC371]/25 pointer-events-none animate-spin"
+                fill="currentColor" style="animation-duration:90s;"
+                viewBox="0 0 200 200">
+                <path
+                  d="M100 10 L102 90 L100 100 L98 90 Z M100 190 L102 110 L100 100 L98 110 Z M10 100 L90 102 L100 100 L90 98 Z M190 100 L110 102 L100 100 L110 98 Z M36 36 L93 93 L100 100 L93 93 Z M164 164 L107 107 L100 100 L107 107 Z M164 36 L107 93 L100 100 L107 93 Z M36 164 L93 107 L100 100 L93 107 Z"
+                  opacity="0.5"></path>
+              </svg>
+              <div class="w-full h-full animate-spin"
+                style="animation-duration:50s;transform-origin:center center;display:flex;align-items:center;justify-content:center;">
+                <svg
+                  class="w-full h-full text-[#F6D779] opacity-90 pointer-events-none"
+                  fill="none" stroke="currentColor"
+                  style="filter:drop-shadow(0 0 18px rgba(246,215,121,0.7));"
+                  viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="47" stroke-dasharray="2 2"
+                    stroke-width="0.9"></circle>
+                  <circle cx="50" cy="50" opacity="0.85" r="40"
+                    stroke-dasharray="1.5 2" stroke-width="0.6"></circle>
+                  <polygon points="50,3 97,50 50,97 3,50" stroke-width="0.9">
+                  </polygon>
+                  <polygon points="50,3 97,50 50,97 3,50" stroke-width="0.9"
+                    transform="rotate(45 50 50)"></polygon>
+                  <circle cx="50" cy="50" opacity="0.9" r="26"
+                    stroke-dasharray="1.5 1.5" stroke-width="0.8"></circle>
+                  <circle cx="50" cy="50" r="14" stroke="currentColor"
+                    stroke-width="0.7"></circle>
+                </svg>
+              </div>
+            </div>
+            <!-- Ganesha Deity Image — local file -->
+            <div class="relative z-10 w-64 sm:w-72 pt-4 px-2">
+              <img alt="Shri Ganesh"
+                class="w-full h-auto object-contain drop-shadow-[0_12px_28px_rgba(0,0,0,0.85)]"
+                src="ganpati.png" loading="eager" />
+            </div>
+            <!-- Scattered Sacred Marigold Petals -->
+            <div
+              class="absolute bottom-2 inset-x-4 z-20 pointer-events-none flex justify-between items-end opacity-85">
+              <svg
+                class="w-5 h-5 text-amber-500 fill-current transform -rotate-12 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
+                viewBox="0 0 20 20">
+                <ellipse cx="10" cy="10" fill="#F59E0B" rx="7" ry="4"></ellipse>
+                <ellipse cx="10" cy="10" fill="#FBBF24" rx="5" ry="2.5">
+                </ellipse>
+              </svg>
+              <svg
+                class="w-4 h-4 text-orange-500 fill-current transform rotate-45 -mb-1 ml-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
+                viewBox="0 0 20 20">
+                <ellipse cx="10" cy="10" fill="#EA580C" rx="6" ry="3.5">
+                </ellipse>
+                <ellipse cx="10" cy="10" fill="#F59E0B" rx="4" ry="2"></ellipse>
+              </svg>
+              <svg
+                class="w-5 h-5 text-amber-400 fill-current transform rotate-12 -mb-0.5 mr-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
+                viewBox="0 0 20 20">
+                <ellipse cx="10" cy="10" fill="#FBBF24" rx="7" ry="4"></ellipse>
+                <ellipse cx="10" cy="10" fill="#FDE68A" rx="4.5" ry="2">
+                </ellipse>
+              </svg>
+              <svg
+                class="w-4 h-4 text-amber-500 fill-current transform -rotate-45 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]"
+                viewBox="0 0 20 20">
+                <ellipse cx="10" cy="10" fill="#F59E0B" rx="6" ry="3"></ellipse>
+                <ellipse cx="10" cy="10" fill="#FDE047" rx="4" ry="2"></ellipse>
+              </svg>
+            </div>
+            <!-- Soft Divine Mist beneath idol -->
+            <div
+              class="absolute -bottom-10 -inset-x-8 h-36 pointer-events-none z-20 overflow-visible flex flex-col items-center justify-end">
+              <div
+                class="absolute -bottom-6 inset-x-0 h-32 pointer-events-none flex items-end justify-center overflow-visible">
+                <svg class="w-full h-24 opacity-80 filter blur-[1px]"
+                  fill="none" preserveAspectRatio="none" viewBox="0 0 500 120">
+                  <path
+                    d="M0 120 C 60 110, 80 70, 130 75 C 170 80, 200 50, 250 55 C 300 60, 330 40, 380 50 C 430 60, 450 90, 500 120 Z"
+                    fill="url(#mistGrad1)"></path>
+                  <path
+                    d="M0 120 C 40 100, 110 80, 170 85 C 230 90, 270 65, 330 70 C 390 75, 420 95, 500 120 Z"
+                    fill="url(#mistGrad2)" opacity="0.7"></path>
+                  <defs>
+                    <linearGradient id="mistGrad1" x1="0%" x2="0%" y1="0%"
+                      y2="100%">
+                      <stop offset="0%" stop-color="rgba(255,255,255,0.45)">
+                      </stop>
+                      <stop offset="40%" stop-color="rgba(245,212,117,0.25)">
+                      </stop>
+                      <stop offset="100%" stop-color="rgba(5,19,24,0.95)">
+                      </stop>
+                    </linearGradient>
+                    <linearGradient id="mistGrad2" x1="0%" x2="0%" y1="0%"
+                      y2="100%">
+                      <stop offset="0%" stop-color="rgba(255,255,255,0.3)">
+                      </stop>
+                      <stop offset="50%" stop-color="rgba(236,195,113,0.15)">
+                      </stop>
+                      <stop offset="100%" stop-color="transparent"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div
+                class="absolute -bottom-2 -inset-x-4 h-20 bg-gradient-to-t from-[#051318] via-[#051318]/70 to-transparent opacity-90 pointer-events-none">
+              </div>
+              <div
+                class="absolute bottom-0 w-3/4 h-16 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.4)_0%,rgba(236,195,113,0.22)_40%,transparent_70%)] blur-xl pointer-events-none">
+              </div>
+              <div
+                class="absolute -bottom-2 -left-4 w-40 h-16 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.35)_0%,rgba(245,212,117,0.15)_50%,transparent_70%)] blur-lg pointer-events-none animate-pulse">
+              </div>
+              <div
+                class="absolute -bottom-2 -right-4 w-40 h-16 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.35)_0%,rgba(245,212,117,0.15)_50%,transparent_70%)] blur-lg pointer-events-none animate-pulse">
+              </div>
+              <div
+                class="absolute bottom-2 left-1/2 -translate-x-1/2 w-56 h-10 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.5)_0%,rgba(253,240,205,0.2)_50%,transparent_75%)] blur-md pointer-events-none">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Host Family Sub-card -->
+      <div class="flex flex-col items-center mt-12">
+        <div class="flex items-center space-x-3 text-[#ECC371] mb-2 opacity-80">
+          <span
+            class="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#ECC371]"></span>
+          <span class="text-xs">✤ ✦ ✤</span>
+          <span
+            class="h-[1px] w-12 bg-gradient-to-l from-transparent to-[#ECC371]"></span>
+        </div>
+        <h2
+          class="text-2xl md:text-3xl font-bold text-[#ECC371] font-marathi tracking-wide mb-1">
+          कोठारी परिवाराकडून
+        </h2>
+        <p class="text-sm md:text-base text-stone-300 font-normal">सस्नेह
+          आमंत्रण</p>
+        <div class="flex items-center space-x-3 text-[#ECC371] mt-2 opacity-80">
+          <span
+            class="h-[1px] w-12 bg-gradient-to-r from-transparent to-[#ECC371]"></span>
+          <span class="text-xs">✤ ✦ ✤</span>
+          <span
+            class="h-[1px] w-12 bg-gradient-to-l from-transparent to-[#ECC371]"></span>
+        </div>
+      </div>
+    </section>
+    <!-- END: HeroSection -->
+
+    <!-- BEGIN: InvitationSection -->
+    <section class="max-w-7xl mx-auto px-4 md:px-8 text-center"
+      data-purpose="invitation-family-list">
+      <h2
+        class="text-4xl md:text-6xl font-bold text-gold-gradient font-marathi mb-3 leading-relaxed pt-4 pb-2 overflow-visible">
+        सस्नेह आमंत्रण</h2>
+      <div
+        class="flex items-center justify-center space-x-3 text-[#ECC371] mb-5 opacity-70">
+        <span
+          class="h-[1px] w-16 bg-gradient-to-r from-transparent to-[#ECC371]"></span>
+        <span class="text-xs">❖</span>
+        <span
+          class="h-[1px] w-16 bg-gradient-to-l from-transparent to-[#ECC371]"></span>
+      </div>
+      <!-- Invitation paragraph card -->
+      <div
+        class="max-w-4xl mx-auto mb-12 p-6 md:p-8 rounded-3xl bg-[#081b21]/95 border border-[#1b3b42] shadow-xl text-center backdrop-blur-md relative overflow-hidden">
+        <div
+          class="absolute top-2 left-2 pointer-events-none text-[#ECC371] opacity-75 drop-shadow-[0_0_6px_rgba(236,195,113,0.5)]">
+          <svg class="w-10 h-10 md:w-12 md:h-12" fill="none"
+            stroke="currentColor" viewBox="0 0 100 100">
+            <path d="M4 4 L90 4 M4 4 L4 90" stroke-width="1.5"></path>
+            <path d="M8 8 L72 8 M8 8 L8 72" stroke-dasharray="2 2"
+              stroke-width="0.75"></path>
+            <path d="M4 4 C18 28, 30 14, 42 42 C34 22, 22 34, 4 4 Z"
+              fill="currentColor" opacity="0.55"></path>
+            <circle cx="4" cy="4" fill="currentColor" r="2"></circle>
+          </svg>
+        </div>
+        <div
+          class="absolute top-2 right-2 pointer-events-none text-[#ECC371] opacity-75 drop-shadow-[0_0_6px_rgba(236,195,113,0.5)]">
+          <svg class="w-10 h-10 md:w-12 md:h-12 rotate-90" fill="none"
+            stroke="currentColor" viewBox="0 0 100 100">
+            <path d="M4 4 L90 4 M4 4 L4 90" stroke-width="1.5"></path>
+            <path d="M8 8 L72 8 M8 8 L8 72" stroke-dasharray="2 2"
+              stroke-width="0.75"></path>
+            <path d="M4 4 C18 28, 30 14, 42 42 C34 22, 22 34, 4 4 Z"
+              fill="currentColor" opacity="0.55"></path>
+            <circle cx="4" cy="4" fill="currentColor" r="2"></circle>
+          </svg>
+        </div>
+        <div
+          class="absolute bottom-2 left-2 pointer-events-none text-[#ECC371] opacity-75 drop-shadow-[0_0_6px_rgba(236,195,113,0.5)]">
+          <svg class="w-10 h-10 md:w-12 md:h-12 -rotate-90" fill="none"
+            stroke="currentColor" viewBox="0 0 100 100">
+            <path d="M4 4 L90 4 M4 4 L4 90" stroke-width="1.5"></path>
+            <path d="M8 8 L72 8 M8 8 L8 72" stroke-dasharray="2 2"
+              stroke-width="0.75"></path>
+            <path d="M4 4 C18 28, 30 14, 42 42 C34 22, 22 34, 4 4 Z"
+              fill="currentColor" opacity="0.55"></path>
+            <circle cx="4" cy="4" fill="currentColor" r="2"></circle>
+          </svg>
+        </div>
+        <div
+          class="absolute bottom-2 right-2 pointer-events-none text-[#ECC371] opacity-75 drop-shadow-[0_0_6px_rgba(236,195,113,0.5)]">
+          <svg class="w-10 h-10 md:w-12 md:h-12 rotate-180" fill="none"
+            stroke="currentColor" viewBox="0 0 100 100">
+            <path d="M4 4 L90 4 M4 4 L4 90" stroke-width="1.5"></path>
+            <path d="M8 8 L72 8 M8 8 L8 72" stroke-dasharray="2 2"
+              stroke-width="0.75"></path>
+            <path d="M4 4 C18 28, 30 14, 42 42 C34 22, 22 34, 4 4 Z"
+              fill="currentColor" opacity="0.55"></path>
+            <circle cx="4" cy="4" fill="currentColor" r="2"></circle>
+          </svg>
+        </div>
+        <p
+          class="text-base md:text-xl text-stone-100 font-marathi font-normal leading-loose tracking-wide">
+          दरवर्षी प्रमाणे आमच्या घरी सोमवार दि. १४/०९/२०२६ रोजी आपल्या लाडक्या
+          बाप्पाचे आगमण होत आहे. या
+          निमित्ताने आपण सर्वांनी सहकुटुंब - सहपरिवार लाडक्या बाप्पाच्या दर्शनास
+          व ह्य आनंद सोहळ्यात सहभागी होऊन
+          बाप्पांचे आशिर्वाद घेण्यास आपणास कोठारी कुटुंबाकडून निमंत्रण आहे !
+        </p>
+      </div>
+    </section>
+    <!-- END: InvitationSection -->
+
+    <!-- BEGIN: FestivalScheduleSection -->
+    <section class="max-w-6xl mx-auto px-4 relative"
+      data-purpose="festival-dates-schedule">
+      <div class="text-center mb-10">
+        <h2
+          class="text-4xl md:text-6xl font-bold text-gold-gradient font-marathi pt-4 leading-relaxed overflow-visible">
+          गणेश उत्सव
+        </h2>
+        <div
+          class="flex items-center justify-center space-x-3 text-[#ECC371] mt-3 opacity-70">
+          <span
+            class="h-[1px] w-14 bg-gradient-to-r from-transparent to-[#ECC371]"></span>
+          <span class="text-xs">✤ ✦ ✤</span>
+          <span
+            class="h-[1px] w-14 bg-gradient-to-l from-transparent to-[#ECC371]"></span>
+        </div>
+      </div>
+
+      <!-- Schedule Cards Side-by-Side -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+        <!-- Card 1 -->
+        <div
+          class="bg-[#081b21]/95 rounded-3xl p-8 border border-[#1b3b42] flex flex-col items-center justify-center text-center shadow-xl relative overflow-hidden">
+          <div
+            class="absolute top-2 left-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute top-2 right-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 rotate-90" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute bottom-2 left-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 -rotate-90" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute bottom-2 right-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 rotate-180" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <span
+            class="text-[#ECC371] font-marathi tracking-wider mb-3 text-lg md:text-xl font-semibold">
+            स्थापना
+          </span>
+          <p class="text-2xl md:text-4xl font-bold text-white font-marathi">
+            १४ सप्टेंबर २०२६
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-[#081b21]/95 rounded-3xl p-8 border border-[#1b3b42] flex flex-col items-center justify-center text-center shadow-xl relative overflow-hidden">
+          <div
+            class="absolute top-2 left-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute top-2 right-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 rotate-90" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute bottom-2 left-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 -rotate-90" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute bottom-2 right-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 rotate-180" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <span
+            class="text-[#ECC371] font-marathi tracking-wider mb-3 text-lg md:text-xl font-semibold">
+            भंडारा
+          </span>
+          <p class="text-2xl md:text-3xl font-bold text-white font-marathi">
+            तारीख लवकरच जाहीर करण्यात येईल
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-[#081b21]/95 rounded-3xl p-8 border border-[#1b3b42] flex flex-col items-center justify-center text-center shadow-xl relative overflow-hidden md:col-span-2">
+
+          <div
+            class="absolute top-2 left-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute top-2 right-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 rotate-90" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute bottom-2 left-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 -rotate-90" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <div
+            class="absolute bottom-2 right-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-9 h-9 rotate-180" fill="none" stroke="currentColor"
+              viewBox="0 0 40 40">
+              <path d="M2 2 L34 2 M2 2 L2 34" stroke-width="1.2"></path>
+              <circle cx="2" cy="2" fill="currentColor" r="1.5"></circle>
+              <path d="M2 2 C8 14, 14 8, 18 18 Z" fill="currentColor"
+                opacity="0.5"></path>
+            </svg>
+          </div>
+
+          <span
+            class="text-[#ECC371] font-marathi tracking-wider mb-3 text-lg md:text-xl font-semibold">
+            विसर्जन
+          </span>
+          <p class="text-2xl md:text-4xl font-bold text-white font-marathi">
+            २५ सप्टेंबर २०२६
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- END: FestivalScheduleSection -->
+
+    <!-- BEGIN: LocationVenueSection -->
+    <section class="max-w-6xl mx-auto px-4" data-purpose="venue-and-map">
+      <div class="text-center mb-10">
+        <h2
+          class="text-4xl md:text-6xl font-bold text-gold-gradient font-marathi pt-4 leading-relaxed overflow-visible pb-2">
+          ठिकाण</h2>
+        <div
+          class="flex items-center justify-center space-x-3 text-[#ECC371] mt-3 opacity-70">
+          <span
+            class="h-[1px] w-14 bg-gradient-to-r from-transparent to-[#ECC371]"></span>
+          <span class="text-xs">✤ ✦ ✤</span>
+          <span
+            class="h-[1px] w-14 bg-gradient-to-l from-transparent to-[#ECC371]"></span>
+        </div>
+      </div>
+      <!-- Location Card Container -->
+      <div
+        class="bg-[#071a20]/95 rounded-3xl border border-[#1b3b42] overflow-hidden shadow-2xl relative grid grid-cols-1 lg:grid-cols-12 min-h-[380px]">
+        <!-- Left Side: Map (lg:col-span-5) -->
+        <div
+          class="lg:col-span-5 relative bg-[#1c282c] overflow-hidden min-h-[260px] lg:min-h-full border-b lg:border-b-0 lg:border-r border-[#1b3b42]">
+          <iframe title="Kothari Kirana Nandura"
+            class="w-full h-full min-h-[260px] border-0 opacity-90"
+            src="https://maps.google.com/maps?q=Kothari+Kirana+Store+Nandura+&output=embed&z=16"
+            loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- Open Maps pill -->
+          <a class="absolute top-4 left-4 bg-[#0a181c]/80 hover:bg-[#0a181c] backdrop-blur-md text-stone-200 text-xs px-3 py-1.5 rounded-lg border border-stone-600 flex items-center space-x-1 transition-colors"
+            href="https://maps.app.goo.gl/faEGm64rUbTt8QKd8"
+            rel="noopener noreferrer" target="_blank">
+            <span>Open in Maps</span><span>↗</span>
+          </a>
+        </div>
+        <!-- Right Side: Venue Details (lg:col-span-7) -->
+        <div
+          class="lg:col-span-7 p-8 md:p-12 flex flex-col justify-center items-center text-center relative">
+          <div
+            class="absolute top-2 right-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-10 h-10 md:w-12 md:h-12 rotate-90" fill="none"
+              stroke="currentColor" viewBox="0 0 100 100">
+              <path d="M4 4 L90 4 M4 4 L4 90" stroke-width="1.5"></path>
+              <path d="M8 8 L72 8 M8 8 L8 72" stroke-dasharray="2 2"
+                stroke-width="0.75"></path>
+              <path d="M4 4 C18 28, 30 14, 42 42 C34 22, 22 34, 4 4 Z"
+                fill="currentColor" opacity="0.55"></path>
+              <circle cx="4" cy="4" fill="currentColor" r="2"></circle>
+            </svg></div>
+          <div
+            class="absolute bottom-2 right-2 pointer-events-none text-[#ECC371] opacity-75">
+            <svg class="w-10 h-10 md:w-12 md:h-12 rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 100 100">
+              <path d="M4 4 L90 4 M4 4 L4 90" stroke-width="1.5"></path>
+              <path d="M8 8 L72 8 M8 8 L8 72" stroke-dasharray="2 2"
+                stroke-width="0.75"></path>
+              <path d="M4 4 C18 28, 30 14, 42 42 C34 22, 22 34, 4 4 Z"
+                fill="currentColor" opacity="0.55"></path>
+              <circle cx="4" cy="4" fill="currentColor" r="2"></circle>
+            </svg></div>
+          <div
+            class="absolute bottom-2 left-2 pointer-events-none text-[#ECC371] opacity-75 hidden lg:block">
+            <svg class="w-10 h-10 md:w-12 md:h-12 -rotate-90" fill="none"
+              stroke="currentColor" viewBox="0 0 100 100">
+              <path d="M4 4 L90 4 M4 4 L4 90" stroke-width="1.5"></path>
+              <path d="M8 8 L72 8 M8 8 L8 72" stroke-dasharray="2 2"
+                stroke-width="0.75"></path>
+              <path d="M4 4 C18 28, 30 14, 42 42 C34 22, 22 34, 4 4 Z"
+                fill="currentColor" opacity="0.55"></path>
+              <circle cx="4" cy="4" fill="currentColor" r="2"></circle>
+            </svg></div>
+          <!-- Top note -->
+          <div class="text-[#ECC371]/80 text-xs md:text-sm font-marathi mb-4">
+            बाप्पाच्या दर्शनासाठी अवश्य या</div>
+          <!-- Residence Name -->
+          <h3
+            class="text-3xl md:text-5xl font-bold text-white font-marathi mb-4">
+            कोठारी निवास</h3>
+          <!-- Address -->
+          <p
+            class="text-stone-300 text-base md:text-xl font-marathi leading-relaxed max-w-md mb-8">
+            <span class="text-[#f8bc0a] font-semibold">KOTHARI KIRANA STORE,
+              NANDURA KHURD, NANDURA</span>
+          </p>
+          <!-- Open Maps Button -->
+          <a class="px-8 py-3 rounded-full bg-gradient-to-r from-[#ECC371] to-[#C59A3F] text-stone-900 font-semibold text-sm md:text-base hover:brightness-110 shadow-[0_0_25px_rgba(236,195,113,0.4)] transition-all transform hover:scale-105 min-h-[44px] flex items-center"
+            href="https://maps.app.goo.gl/faEGm64rUbTt8QKd8"
+            rel="noopener noreferrer" target="_blank">
+            Open Maps
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- END: LocationVenueSection -->
+
+    <!-- BEGIN: BlessingFooterSection -->
+    <section class="max-w-5xl mx-auto px-4 text-center pt-8"
+      data-purpose="blessing-closing">
+      <div
+        class="flex items-center justify-center space-x-3 text-[#ECC371] mb-8 opacity-70">
+        <span
+          class="h-[1px] w-14 bg-gradient-to-r from-transparent to-[#ECC371]"></span>
+        <span class="text-xs">✤ ✦ ✤</span>
+        <span
+          class="h-[1px] w-14 bg-gradient-to-l from-transparent to-[#ECC371]"></span>
+      </div>
+      <h2
+        class="text-2xl sm:text-3xl md:text-5xl font-bold text-stone-100 font-marathi leading-snug md:leading-normal max-w-4xl mx-auto drop-shadow-md">
+        आपली उपस्थिती हेच आमच्यासाठी<br />बाप्पाचे आशीर्वाद आहेत.
+      </h2>
+      <p
+        class="mt-8 text-sm md:text-base text-[#ECC371]/80 font-marathi tracking-widest">
+        — कोठारी परिवार</p>
+    </section>
+    <!-- END: BlessingFooterSection -->
+
+  </main>
+
+  <!-- BEGIN: InteractiveScripts -->
+  <script data-purpose="audio-drone">
+    let isPlaying = false;
+
+    // ── MP3 Audio Player ──────────────────────────────────────────
+    const bgAudio = new Audio('ganpati-music.mp3');
+    bgAudio.loop = true;
+    bgAudio.volume = 0.40;
+
+    // Oscillator fallback (used only if MP3 fails to load)
+    let audioCtx = null;
+    let osc1 = null;
+    let osc2 = null;
+    let gainNode = null;
+    let usingFallback = false;
+
+    bgAudio.addEventListener('error', () => {
+      usingFallback = true;
+    });
+
+    function startOscillator() {
+      if (!audioCtx) {
+        const AC = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AC();
+        gainNode = audioCtx.createGain();
+        gainNode.gain.setValueAtTime(0.04, audioCtx.currentTime);
+        gainNode.connect(audioCtx.destination);
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      osc1 = audioCtx.createOscillator();
+      osc2 = audioCtx.createOscillator();
+      osc1.type = 'triangle';
+      osc1.frequency.setValueAtTime(146.83, audioCtx.currentTime);
+      osc2.type = 'sine';
+      osc2.frequency.setValueAtTime(220.00, audioCtx.currentTime);
+      osc1.connect(gainNode);
+      osc2.connect(gainNode);
+      osc1.start();
+      osc2.start();
+    }
+
+    function stopOscillator() {
+      if (osc1 && osc2) {
+        osc1.stop();
+        osc2.stop();
+        osc1.disconnect();
+        osc2.disconnect();
+      }
+    }
+
+    function setBtnState(playing) {
+      const btn = document.getElementById('audio-toggle-btn');
+      if (playing) {
+        btn.classList.add('text-amber-300', 'ring-2', 'ring-[#ECC371]');
+      } else {
+        btn.classList.remove('text-amber-300', 'ring-2', 'ring-[#ECC371]');
+      }
+    }
+
+    function toggleAudio() {
+      if (!isPlaying) {
+        // Play MP3 (or fallback)
+        if (!usingFallback) {
+          const playPromise = bgAudio.play();
+          if (playPromise !== undefined) {
+            playPromise
+              .then(() => {
+                isPlaying = true;
+                setBtnState(true);
+              })
+              .catch(() => {
+                // MP3 blocked or missing — use oscillator
+                usingFallback = true;
+                startOscillator();
+                isPlaying = true;
+                setBtnState(true);
+              });
+          }
+        } else {
+          startOscillator();
+          isPlaying = true;
+          setBtnState(true);
+        }
+      } else {
+        // Pause / stop
+        if (!usingFallback) {
+          bgAudio.pause();
+        } else {
+          stopOscillator();
+        }
+        isPlaying = false;
+        setBtnState(false);
+      }
+    }
+  </script>
+
+  <script data-purpose="door-open-interaction">
+    function openDoors() {
+      const container = document.getElementById('curtain-container');
+      container.classList.add('doors-open');
+      try {
+        if (!isPlaying) {
+          toggleAudio();
+        }
+      } catch (e) {}
+      setTimeout(() => {
+        container.style.display = 'none';
+      }, 1600);
+    }
+  </script>
+  <!-- END: InteractiveScripts -->
+  <script>
+    (function() {
+      // Mark all main sections hidden initially
+      const sections = document.querySelectorAll('main > section');
+      sections.forEach(function(el) {
+        el.classList.add('sr-hidden');
+      });
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('sr-hidden');
+            entry.target.classList.add('sr-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -30px 0px'
+      });
+
+      sections.forEach(function(el) {
+        observer.observe(el);
+      });
+
+      // After curtain opens, force-reveal the first section immediately
+      var origOpenDoors = window.openDoors;
+      window.openDoors = function() {
+        origOpenDoors();
+        setTimeout(function() {
+          var first = document.querySelector('main > section');
+          if (first) {
+            first.classList.remove('sr-hidden');
+            first.classList.add('sr-visible');
+          }
+        }, 800);
+      };
+    })();
+  </script>
+
+</body>
+
+</html>
